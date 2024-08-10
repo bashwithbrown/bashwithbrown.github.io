@@ -1,0 +1,504 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-color: #212529;
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+
+.container {
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h5 {
+  text-align: center;
+  color: #333;
+}
+
+a {
+  color: #007BFF;
+  font-size: 18px;
+}
+
+
+td, thead {
+   text-align: center;   
+}
+
+td, th {
+    vertical-align: middle;   
+    text-align: center;
+    padding: 10px;
+}
+
+.table-striped tbody tr {
+    height: 50px; /* Ensure minimum row height for better appearance */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #373b3e;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-control-file {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-heading {
+  text-align: center;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+
+.nav-item {
+    margin: 5px;
+}
+
+.ul-div {
+    margin: 10px;
+}
+
+ul, li, label {
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+  .dark-mode {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+
+  .ul-div {
+    text-align: center;
+  }
+
+  .ul-div h5,
+  .ul-div p {
+    margin-bottom: 5px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 10px;
+    max-width: none;
+  }
+
+  .centered-ul {
+    flex-wrap: wrap;
+  }
+
+  .centered-ul .ul-div {
+    flex: 0 0 100%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav.ml-auto {
+    flex-direction: row;
+  }
+  .navbar-nav.ml-auto .nav-item {
+    margin-left: 5px;
+  }
+}
+
+.centered-ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.centered-ul .ul-div {
+  margin: 10px;
+}
+
+
+.contact-info {
+padding: 2.3rem 2.2rem;
+position: relative;
+}
+
+.contact-info .title {
+color: #1abc9c;
+}
+
+.text {
+color: #333;
+margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+display: flex;
+color: #555;
+margin: 0.7rem 0;
+align-items: center;
+font-size: 0.95rem;
+}
+
+.icon {
+width: 28px;
+margin-right: 0.7rem;
+}
+
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+.social-media p {
+  color: #333;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons a {
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a:hover {
+  transform: scale(1.05);
+}
+
+.social-media {
+  padding: 1.5rem 0 0 0;
+}
+
+.text,
+.information,
+.social-media p {
+  font-size: 0.8rem;
+}
+
+.social-icons i {
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
+
+
+.icon {
+  width: 23px;
+}
+
+
+
+.bi-check {
+    color: green;
+}
+
+.bi-x {
+    color: red;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.bg-dark {
+    background-color: #212529 !important;
+}
+
+.bg-light {
+    background-color: #343a40 !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+
+/* Adjust button styling */
+.actions-container button {
+    height: 36px; /* Match the height of the text in other cells */
+    line-height: 1.5;
+    width: auto;
+}
+
+/* Additional styling to improve table appearance */
+.actions-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.form-section {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.form-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Styling for form-floating elements */
+.form-floating {
+    margin-bottom: 1rem;
+}
+
+.form-floating label {
+    color: #6c757d;
+}
+
+.was-validated .form-control:valid, 
+.form-control.is-valid {
+    border-color: #28a745;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2328a745' viewBox='0 0 16 16'%3e%3ccircle cx='8' cy='8' r='8' stroke-width='2'/%3e%3cpath stroke='%2328a745' d='M6 8.5l1.5 1.5 3.5-3.5' stroke-width='2'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(1.5em + 0.75rem) calc(1.5em + 0.75rem);
+}
+
+.was-validated .form-control:invalid, 
+.form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23dc3545' viewBox='0 0 16 16'%3e%3ccircle cx='8' cy='8' r='8' stroke-width='2'/%3e%3cpath stroke='%23dc3545' d='M6 6l4 4m0-4l-4 4' stroke-width='2'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(1.5em + 0.75rem) calc(1.5em + 0.75rem);
+}
+
+.custom-navbar {
+    border-radius: 50px; /* Make the navbar pill-shaped */
+    padding: 0 20px; /* Add some horizontal padding */
+    margin: 10px; /* Add some border margin */
+    color: grey;
+}
+
+.custom-navbar .navbar-nav .nav-item {
+    margin-left: 15px; /* Space out the items */
+    margin-right: 15px;
+}
+
+.custom-navbar .nav-link {
+    padding: 10px 20px; /* Add padding for better click area and aesthetics */
+    border-radius: 25px; /* Pill shape for the nav items */
+}
+
+.custom-navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.custom-navbar .navbar-brand {
+    font-size: 1.5rem; /* Larger brand name for better visibility */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.card-img-top {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  text-align: center; /* Center the text in the card */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-header {
+  color: #ffffff;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.btn-outline-primary {
+  background-color: transparent;
+  border: 2px solid #007BFF;
+  color: #007BFF;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+
+pre {
+    margin: 20px 0; /* Adjust the margin as needed */
+    padding: 10px;  /* Optional: Add padding inside the <pre> block */
+    background-color: #7B7B7B; /* Change this color to your preferred background color */
+    border: 1px solid #7B7B7B; /* Optional: Add a border to make the code block more distinct */
+    border-radius: 5px; /* Optional: Round the corners of the border */
+    overflow-x: auto; /* Optional: Add horizontal scrolling if the code is too wide */
+    color: black;
+}
