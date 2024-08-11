@@ -164,12 +164,8 @@
     <script>
       document.getElementById("contactForm").addEventListener("submit", function(event) {
         event.preventDefault();
-
         var formData = new FormData(this);
         var xhr = new XMLHttpRequest();
-        
-        console.log(xhr);
-
         xhr.open("POST", "https://dandydev.pythonanywhere.com/api/submit-contact-information", true);
         xhr.onload = function () {
           if (xhr.status === 200) {
