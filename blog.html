@@ -113,7 +113,6 @@
                                 <img src="https://dandydev.pythonanywhere.com/static/file_upload/${JSON.parse(post.meta_data).file}" alt="${post.title}" class="card-img-top">
                                 <div class="card-body d-flex flex-column flex-grow-1">
                                     <h3 class="card-title">${post.title}</h3>
-                                    <p class="card-text flex-grow-1">${post.content}</p>
                                     <p class="card-text">${new Date(post.datetime).toLocaleString()}</p>
                                     <p class="card-text">${post.author}</p>
                                     <button class="btn btn-primary mt-3 read-more-btn" data-id="${post.id}">Read More</button>
