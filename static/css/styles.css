@@ -215,6 +215,11 @@ ul, li, label {
   }
 }
 
+.spinner-border {
+    display: block;
+    margin: 0 auto;
+}
+
 .centered-ul {
   display: flex;
   justify-content: center;
@@ -266,6 +271,7 @@ margin-right: 0.7rem;
 .social-icons {
   margin-top: 0.5rem;
 }
+
 
 .social-icons a {
   width: 35px;

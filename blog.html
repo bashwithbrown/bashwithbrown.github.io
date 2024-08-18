@@ -56,6 +56,9 @@
             <div id="posts-container" class="row">
                 <!-- Blog posts will be injected here -->
             </div>
+            <div class="spinner-border text-primary mt-3 d-none" role="status" id="loadingSpinner">
+              <span class="visually-hidden">Loading...</span>
+            </div>
         </div>
     </section>
 
@@ -101,10 +104,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            const postsContainer = document.getElementById('posts-container');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            loadingSpinner.classList.remove('d-none');
+
             fetch('https://dandydev.pythonanywhere.com/api/get-blog-posts')
                 .then(response => response.json())
                 .then(data => {
-                    const postsContainer = document.getElementById('posts-container');
                     data.posts.forEach(post => {
                         const postElement = document.createElement('div');
                         postElement.className = 'col-sm-6 col-lg-4 mb-4';
@@ -129,7 +135,11 @@
                         });
                     });
                 })
-                .catch(error => console.error('Error fetching blog posts:', error));
+                .catch(error => console.error('Error fetching blog posts:', error))
+                .finally(() => {
+                    // Hide the spinner once posts are loaded
+                    loadingSpinner.classList.add('d-none');
+                });
         });
     </script>
 </body>
