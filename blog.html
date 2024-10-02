@@ -196,8 +196,8 @@
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     const data = JSON.parse(xhr.responseText);
-                    modalTitle.innerText = data.title;
-                    modalBody.innerHTML = data.content;
+                    modalTitle.innerText = data.post.title;
+                    modalBody.innerHTML = data.post.content;
                 } else {
                     console.error('Error loading blog post details:', xhr.statusText);
                     modalBody.innerHTML = '<p class="text-danger">Failed to load blog post details.</p>';
